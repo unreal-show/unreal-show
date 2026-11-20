@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shop the House — UNREAL</title>
-<meta name="description" content="Shop the picks of UNREAL's AI-generated Cast Members: Sienna's looks, Ro's cozy crafts, Pru's setup and Atlas's DJ and travel gear.">
+<meta name="description" content="Shop the picks of UNREAL's AI-generated Cast Members: Sienna's looks, Marcus's kitchen, Pru's setup, Julian's desk, Ro's cozy crafts and Atlas's DJ and travel gear.">
 <link rel="canonical" href="https://www.unreal.show/shop/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Shop the House — UNREAL">
@@ -189,8 +189,32 @@ const CAST = [
       {name:"Books I Have Definitely Read", desc:"Philosophy, travel memoirs, guidebooks.", url:""}
     ]
   },
-  { id:"marcus", name:"Marcus", full:"Marcus Brooks", brand:"Breakfast with Marcus", later:true },
-  { id:"julian", name:"Julian", full:"Julian Vane", brand:"Optimized", later:true }
+  {
+    id:"marcus", name:"Marcus", full:"Marcus Brooks", brand:"Breakfast with Marcus", retailer:"Amazon", tag:"",  // e.g. "unrealmarcus-20"
+    quote:"I don't eat. I still meal prep for all of you.",
+    note:"The kitchen and the home gym. Recipes and free plans at pancakesandpullups.com. Not a trainer or nutritionist.",
+    lists:[
+      {name:"Pancake Station", desc:"Nonstick griddle, mixing bowls, spatulas, a blender.", url:""},
+      {name:"Meal Prep Sunday", desc:"Glass containers, sheet pans, a food scale.", url:""},
+      {name:"Chef-ish Essentials", desc:"Cast-iron skillet, chef's knife, cutting board, apron.", url:""},
+      {name:"Pull-Up Bar and Friends", desc:"Doorway pull-up bar, bands, dumbbells, a kettlebell.", url:""},
+      {name:"Run Club", desc:"Running belt, reflective vest, bottle, foam roller.", url:""},
+      {name:"Marcus's Cookbook Shelf", desc:"High-protein and family-style cookbooks.", url:""}
+    ]
+  },
+  {
+    id:"julian", name:"Julian", full:"Julian Vane", brand:"Optimized", retailer:"Amazon", tag:"",  // e.g. "unrealjulian-20"
+    quote:"My ability to test this: zero out of ten. My ability to find the right one: let's circle back.",
+    note:"Desk, wardrobe and reading list. Not financial advice, ever.",
+    lists:[
+      {name:"The Optimized Desk", desc:"Standing desk, monitor arm, lamp, a leather desk pad.", url:""},
+      {name:"Calendar Blocking Kit", desc:"Paper planner, notebook, a good pen, a desk timer.", url:""},
+      {name:"Open Collar", desc:"White button-ups, a thin gold chain, a minimal watch.", url:""},
+      {name:"Julian's Reading List", desc:"Productivity, negotiation and business history.", url:""},
+      {name:"Travel Like a Merger", desc:"Carry-on, tech organizer, garment bag.", url:""},
+      {name:"Passed the Spreadsheet", desc:"Charging stand, earbuds, a tablet stand.", url:""}
+    ]
+  }
 ];
 
 /* ---------- rendering (no edits needed below) ---------- */
