@@ -395,6 +395,7 @@ section{padding:84px 0;border-bottom:1px solid var(--line)}
 /* trailer */
 .player{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#0b0b12;border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(180,107,255,.45)}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player video{position:absolute;inset:0;width:100%;height:100%;background:#000;object-fit:contain}
 .poster{position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,1fr);filter:blur(3px) brightness(.45) saturate(1.2);transform:scale(1.05)}
 .poster img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
 .player-ui{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background:radial-gradient(ellipse at center,rgba(7,7,11,.2),rgba(7,7,11,.75))}
@@ -572,13 +573,12 @@ footer .legal{border-top:1px solid var(--line);padding-top:20px;font-size:12px;l
       <p>Six AI-generated Cast Members. One glass villa in the Hollywood Hills. Nothing is scripted.</p>
     </div>
     <div class="player" id="player">
-      <div class="poster" id="poster" aria-hidden="true"></div>
-      <div class="player-ui">
-        <div class="play">▶</div>
-        <div class="display ptitle">Trailer coming soon</div>
-        <div class="psub">Follow <a href="https://www.instagram.com/unrealtheshow/" target="_blank" rel="noopener">@unrealtheshow</a> to see it first.</div>
-      </div>
+      <div class="poster" id="poster" aria-hidden="true" style="display:none"></div>
+      <video id="trailerVideo" controls playsinline preload="metadata" poster="unreal-trailer-poster.jpg">
+        <source src="unreal-trailer.mp4" type="video/mp4">
+      </video>
     </div>
+    <p class="psub" style="margin-top:12px;text-align:center;color:var(--mut)">All Cast Members are AI-generated and fictional.</p>
   </div>
 </section>
 
